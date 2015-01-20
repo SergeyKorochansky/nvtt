@@ -7,4 +7,11 @@ describe 'Login' do
     expect(last_response.status).to eq 200
     expect(last_response.body).to include 'Login'
   end
+
+  it 'should redirect to profile page' do
+    post '/login'
+    expect(last_response).to be_redirect
+    follow_redirect!
+    expect(last_request.url).to eq 'http://example.org/profile'
+  end
 end

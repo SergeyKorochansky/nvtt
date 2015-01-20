@@ -14,10 +14,4 @@ describe 'Login' do
     follow_redirect!
     expect(last_request.url).to eq 'http://example.org/profile'
   end
-
-  it 'should return profile page' do
-    get '/profile'
-    expect(last_response).to be_ok
-    expect(last_response.body).to include 'Profile'
-  end
 end

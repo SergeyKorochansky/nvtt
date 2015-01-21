@@ -1,0 +1,21 @@
+{
+  "name": "converter",
+  "version": "1.0.0",
+  "description": "Number to words converter",
+  "main": "convert.js",
+  "author": "Serhij Korochanskyj",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.7.1",
+    "mocha": "~1.18",
+    "should": "~3.2",
+    "uglify-js": "~2.4"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/coffee -c -o lib/ src/ && ./node_modules/.bin/uglifyjs lib/converter.js -o lib/converter.min.js -m -c",
+    "test": "npm run build && ./node_modules/.bin/mocha"
+  }
+}

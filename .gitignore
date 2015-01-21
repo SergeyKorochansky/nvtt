@@ -2,4 +2,5 @@
 .sass-cache/
 task1/public/
 
+node_modules/
 *.swp

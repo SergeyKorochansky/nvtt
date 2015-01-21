@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <title>Demo | Number Converter</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<h1>Number Converter - Demo</h1>
+<article>
+    <input type="text" id="input">
+    <button id="convertButton">Convert</button>
+    <p id="text"></p>
+</article>
+<script src="lib/converter.min.js" charset="utf-8"></script>
+
+<script type='text/javascript'>
+    (function() {
+        function convertInput() {
+            var text = parseInt(document.getElementById('input').value);
+            document.getElementById('text').innerText = convertNumber(text);
+        }
+
+        document.getElementById('convertButton').onclick = convertInput;
+    })();
+</script>
+</body>
+</html>

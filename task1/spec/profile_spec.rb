@@ -1,7 +1,6 @@
 require 'rspec'
 
 describe 'Profile' do
-
   it 'should return page' do
     get '/profile'
     expect(last_response).to be_ok

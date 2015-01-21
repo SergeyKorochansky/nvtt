@@ -1,16 +1,1 @@
-[
-  {
-    "name": "spark",
-    "digest": "D3EkAwLX6AnQ9yc7+2oA8IkFGeztOf9GyOguX2emjbs=",
-    "salt": "bOuAtk44QlLF8udgmf+C8A==",
-    "last_incorrect_login_try_at": 1421761344,
-    "unsuccessful_tries": 0
-  },
-  {
-    "name": "john",
-    "digest": "kPCtUHmxllug9FIXcQataR32ca99TT1IxnLARpZ821A=",
-    "salt": "8y95jh28zQQXqnOsQhPesw==",
-    "last_incorrect_login_try_at": 1421761360,
-    "unsuccessful_tries": 0
-  }
-]
+[{"name":"spark","digest":"D3EkAwLX6AnQ9yc7+2oA8IkFGeztOf9GyOguX2emjbs=","salt":"bOuAtk44QlLF8udgmf+C8A==","last_incorrect_login_try_at":1421761344,"unsuccessful_tries":0},{"name":"john","digest":"kPCtUHmxllug9FIXcQataR32ca99TT1IxnLARpZ821A=","salt":"8y95jh28zQQXqnOsQhPesw==","last_incorrect_login_try_at":1421761360,"unsuccessful_tries":0}]

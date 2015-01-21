@@ -50,6 +50,7 @@ end
 get '/profile' do
   if logged_in?
     @title = 'Profile'
+    @user_name = session[:user_name]
     haml :profile
   else
     redirect :login, flash[:notice] = 'You must be logged in'

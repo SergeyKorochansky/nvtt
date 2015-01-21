@@ -2,6 +2,12 @@
 %html
   %head
     %title Test Task
+    = stylesheet_tag 'app'
     %meta{content: 'width=device-width, initial-scale=1', name: 'viewport'}
   %body
-    = yield
+    .container-fluid
+      .row
+      .col-md-4
+      .col-md-4
+        = yield
+      .col-md-4

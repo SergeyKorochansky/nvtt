@@ -1,1 +1,5 @@
 .idea/
+.sass-cache/
+task1/public/
+
+*.swp

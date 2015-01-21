@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'sinatra/flash'
 
 enable :sessions
 set :sessions, httponly: true, secure: production?, expire_after: 60*60, secret: ENV['SESSION_SECRET']

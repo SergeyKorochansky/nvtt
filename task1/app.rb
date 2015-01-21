@@ -1,6 +1,8 @@
 require 'sinatra'
 
 enable :sessions
+set :sessions, httponly: true, secure: production?, expire_after: 60*60, secret: ENV['SESSION_SECRET']
+
 
 get '/login' do
   haml :login

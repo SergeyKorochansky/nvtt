@@ -1,0 +1,4 @@
+desc 'Seed database'
+task :seed do
+  cp 'db/db_seed.json', 'db/db.json'
+end

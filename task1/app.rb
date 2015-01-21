@@ -14,6 +14,7 @@ get '/login' do
   if logged_in?
     redirect :profile, flash[:notice] = 'You are already logged in!'
   else
+    @title = 'Login'
     haml :login
   end
 end
@@ -48,6 +49,7 @@ end
 
 get '/profile' do
   if logged_in?
+    @title = 'Profile'
     haml :profile
   else
     redirect :login, flash[:notice] = 'You must be logged in'

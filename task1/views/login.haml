@@ -1,1 +1,7 @@
-Login
+%form.form-signin{action: '/login', method: 'post'}
+  %h1.text-center Login
+  %label.sr-only{for: 'name'} username
+  %input.form-control{name: 'name', autofocus: '', placeholder: 'Username', required: '', type: 'text'}
+    %label.sr-only{:for => 'password'} Password
+    %input.form-control{name: 'password', placeholder: 'Password', required: '', type: 'password'}
+    %button.btn.btn-lg.btn-primary.btn-block{type: 'submit'} Login

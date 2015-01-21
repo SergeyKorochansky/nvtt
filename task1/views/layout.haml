@@ -9,5 +9,12 @@
       .row
       .col-md-4
       .col-md-4
+        - if flash[:notice]
+          .row
+          .alert.alert-info{role: 'alert'}= flash[:notice]
+        - if flash[:error]
+          .row
+            .alert.alert-danger{role: 'alert'}= flash[:error]
+          .row
         = yield
       .col-md-4

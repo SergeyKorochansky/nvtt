@@ -4,6 +4,7 @@ ruby '2.1.5'
 
 gem 'sinatra'
 gem 'sinatra-flash'
+gem 'sinatra-asset-pipeline'
 gem 'haml'
 gem 'sass'
 gem 'bootstrap-sass'

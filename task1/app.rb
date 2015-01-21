@@ -1,6 +1,6 @@
 require 'sinatra'
 
-set sessions: true
+enable :sessions
 
 get '/login' do
   haml :login

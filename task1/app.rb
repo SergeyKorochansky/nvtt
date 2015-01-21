@@ -1,10 +1,12 @@
 require 'sinatra'
 require 'sinatra/flash'
+require 'sinatra/asset_pipeline'
 
 enable :sessions
 set :sessions, httponly: true, secure: production?, expire_after: 60*60, secret: ENV['SESSION_SECRET']
 
 use Rack::Deflater
+register Sinatra::AssetPipeline
 
 get '/login' do
   haml :login

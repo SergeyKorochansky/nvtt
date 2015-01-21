@@ -6,7 +6,7 @@ require_relative 'user'
 
 configure do
   enable :sessions
-  set :sessions, httponly: true, secure: production?, expire_after: 60*60, secret: ENV['SESSION_SECRET']
+  set :session_secret, ENV['SESSION_SECRET']
 
   use Rack::Deflater
   register Sinatra::AssetPipeline

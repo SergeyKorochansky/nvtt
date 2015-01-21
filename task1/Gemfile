@@ -8,6 +8,7 @@ gem 'sinatra-asset-pipeline'
 gem 'haml'
 gem 'sass'
 gem 'bootstrap-sass'
+gem 'thin'
 
 group :test do
   gem 'rspec'

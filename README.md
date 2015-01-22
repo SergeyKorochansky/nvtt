@@ -82,15 +82,9 @@ $ bundle exec test
 
 ## Task 2
 
-Simple MySQL 5.5 database with 3 table and 6 stored procedures.
+Simple MySQL 5.5 database with 3 table and 5 stored procedures.
 
 Database dump ```task2/database.sql``` contains test data and stored procedures "task1" - "task5".
-
-To populate products table call:
-
-```sql
-call fill_products(100);
-```
 
 How to import:
 

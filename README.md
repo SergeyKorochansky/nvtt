@@ -6,15 +6,15 @@ Noosphere Ventures test task
 Content
 ---
 
-- [Simple authentication app](#task1)
+- [Simple authentication app](#task-1)
     - [Demo](#demo1)
     - [How to run locally](#how-to-run-locally1)
     - [Tests](#tests1)
-- [MySQL database](#task2)
-- [PHP and Ruby quines](#task3)
+- [MySQL database](#task-2)
+- [PHP and Ruby quines](#task-3)
     - [Demo](#demo3)
     - [How to run locally](#how-to-run-locally3)
-- [JS converter numbers to text](#task4)
+- [JS converter numbers to text](#task-4)
     - [Demo](#demo4)
     - [How to run locally](#how-to-run-locally4)
     - [Tests](#tests4)
@@ -28,13 +28,10 @@ Simple authentication application. Written in [Ruby](https://www.ruby-lang.org/)
 ### <a name="demo1"></a>Demo
 View [demo](https://nvtt.herokuapp.com/login).
 
-```
-Username: john
-```
+Username: ```john```
 
-```
-Password: 000
-```
+Password: ```000```
+
 ### <a name="how-to-run-locally1"></a>How to run locally
 
 1. Install ruby and node.js. You can use [RVM](https://rvm.io/) and [NVM](https://github.com/creationix/nvm)
@@ -166,4 +163,4 @@ This project is released under the MIT license
 
 Copyright (c) 2015 [Serhij Korochanskyj](https://github.com/webzepter).
 
-See LICENSE.txt for further details.
+See [LICENSE.txt](https://github.com/webzepter/nvtt/blob/master/LICENSE.txt) for further details.

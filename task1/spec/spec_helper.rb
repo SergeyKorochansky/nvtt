@@ -8,7 +8,7 @@ set :raise_errors, true
 set :logging, false
 
 def app
-  Sinatra::Application
+  NVTT::App
 end
 
 RSpec.configure do |config|

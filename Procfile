@@ -1,1 +1,1 @@
-web: cd task1 && rackup -p $PORT
+web: cd task1 && bundle exec rackup -p $PORT -E $RACK_ENV

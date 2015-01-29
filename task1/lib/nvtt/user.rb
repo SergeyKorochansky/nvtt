@@ -15,7 +15,7 @@ module NVTT
     def initialize(name, password)
       @db_data = Database.find(name)
       @password = password
-      self
+      @db_data ? self : nil
     end
 
     def save
@@ -35,13 +35,21 @@ module NVTT
       salt
     end
 
+    def exist?
+      !@db_data.nil?
+    end
+
     def can_login?
-      unsuccessful_tries <= 3 ||
-        (last_incorrect_login_try_at + LOCK_SECONDS <= Time.now.to_i)
+      if exist?
+        unsuccessful_tries <= 3 ||
+            (last_incorrect_login_try_at + LOCK_SECONDS <= Time.now.to_i)
+      end
     end
 
     def can_login_after
-      last_incorrect_login_try_at + LOCK_SECONDS - Time.now.to_i
+      if exist?
+        last_incorrect_login_try_at + LOCK_SECONDS - Time.now.to_i
+      end
     end
 
     def correct_password?

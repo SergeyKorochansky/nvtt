@@ -69,7 +69,7 @@ Application will be available at [http://localhost:9292](http://localhost:9292)
 If you need to reset database, run:
 
 ```
-$ bundle exec seed
+$ bundle exec rake seed
 ```
 
 ### <a name="tests1"></a>Tests
@@ -77,7 +77,7 @@ $ bundle exec seed
 To run tests you need execute:
 
 ```
-$ bundle exec test
+$ bundle exec rake
 ```
 
 ## Task 2

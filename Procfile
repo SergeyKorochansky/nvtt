@@ -1,0 +1,1 @@
+web: cd task1 && rackup -p $PORT

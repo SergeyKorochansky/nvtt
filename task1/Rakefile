@@ -1,5 +1,4 @@
 require 'sinatra/asset_pipeline/task'
-require 'rspec/core/rake_task'
 require_relative 'app'
 
 Sinatra::AssetPipeline::Task.define! App
@@ -9,7 +8,11 @@ task :seed do
   NVTT::Database.seed
 end
 
-RSpec::Core::RakeTask.new(:spec)
+if %w{development test}.include? ENV['RACK_ENV']
+  require 'rspec/core/rake_task'
+  RSpec::Core::RakeTask
 
-desc 'Default task'
-task :default => :spec
+  desc 'Default task'
+  task :default => :spec.new(:spec)
+end
+
